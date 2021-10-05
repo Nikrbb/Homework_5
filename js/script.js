@@ -33,15 +33,15 @@ Pete: 130
 };
 
 let sum;
-function sumSalaries( hui ) {
+function sumSalaries( salaryCount ) {
     let allSalary = 0;
-for ( let salary of Object.values( hui ) ) {
+for ( let salary of Object.values( salaryCount ) ) {
     allSalary += salary;
 };
-sum = allSalary;
+return allSalary;
 };
-sumSalaries(salaries);
-console.log(sum);
+sum = sumSalaries(salaries);
+console.log(`Сумма всех зарплат: ${sum} USD`);
 
    
   
